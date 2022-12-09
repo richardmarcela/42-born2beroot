@@ -11,15 +11,15 @@ sudo ufw allow PORT - allow a new port
 
 sudo ufw delete allow PORT - delete port
 
-getent group user42/sudo - get the users in the group
-
 sudo useradd novouser - create a new user
+
+sudo addgroup novogroup - create a new group
 
 sudo adduser novouser user42 - add user to group
 
-sudo deluser novouser user42 - delete user of a group 
+getent group user42/sudo - get the users in the group
 
-sudo addgroup novogroup - create a new group
+sudo deluser novouser user42 - delete user of a group 
 
 lsblk - show the disk partitions 
 
