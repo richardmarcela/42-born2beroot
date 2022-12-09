@@ -1,42 +1,41 @@
 # 42-born2beroot
-This project aims to create a virtual machine in VirtualBox under specific instructions. 
-monitoring .sh - vim /usr/local/bin/monitoring.sh
 
-sudo cat /var/log/sudo/sudo
+## Important commands for evaluations
+monitoring.sh - vim /usr/local/bin/monitoring.sh
 
-sudo ufw status - mostra as portas permitidas pela firewall, nesse caso, so 4242
+sudo cat /var/log/sudo/sudo.log
 
-sudo ufw allow PORTA 
-sudo ufw delete allow PORTA
+sudo ufw status - show the allowed ports by firewall, in this case only 4242
 
-getent group user42 - lista os usuarios que estao no grupo user42
+sudo ufw allow PORT - allow a new port
+sudo ufw delete allow PORT
 
-getent group sudo - lista os usuarios que estao no grupo sudo
+getent group user42/sudo - get the users in the group
 
-sudo useradd novouser 
+sudo useradd novouser - create a new user
 
-sudo adduser novouser user42 - adc novouser a user42
+sudo adduser novouser user42 - add user to group
 
-sudo deluser novouser user42 - delete 
+sudo deluser novouser user42 - delete user of a group 
 
-sudo addgroup novogroup
+sudo addgroup novogroup - create a new group
 
-lsblk - particoes 
+lsblk - show the disk partitions 
 
-sudo crontab -e - ver o tempo do script
-sudo crontab -r - remove o arquivo atual crontab
-sudo crontab -l - mostra o conteudo atual do crontab 
+sudo crontab -e - see the script
+sudo crontab -r - remove the current crontab
+sudo crontab -l - show the current crontab
 
-sudo vim /etc/pam.d/common-password  - difok (qd mudar a passe tem que ter no minimo 7 caracteres diferente da antiga)
+sudo vim /etc/pam.d/common-password  - password policy 
 
-sudo service ssh status - status ssh e porta utilizadea
+sudo service ssh status - show the status of ssh 
 
-sudo visudo - restricoes do sudo
+sudo visudo - sudo restrictions
 
-vim /etc/hostname - mudar nome do hostname e dps reboot 
+vim /etc/hostname - change the hostname 
 
-hostname -I - pegar ip
+hostname -I - get ip
 
-ssh -p 4242 mrichard@10.11.250.218
+ssh -p 4242 mrichard@10.11.250.218 - connect terminal of pc with the vm
 
-sha1sum Born2beroot.vdi
+sha1sum Born2beroot.vdi - generate the signature
