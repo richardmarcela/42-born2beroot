@@ -7,7 +7,7 @@ sudo cat /var/log/sudo/sudo.log - log everytime a sudo command is used
 
 sudo ufw status - show the allowed ports by firewall, in this case only 4242
 
-sudo ufw allow PORT - allow a new port
+sudo ufw allow PORT - allow a new port 
 sudo ufw delete allow PORT
 
 getent group user42/sudo - get the users in the group
