@@ -1,8 +1,5 @@
 # 42-born2beroot
 
-## Theoric questions
-1 - What is a Virtual Machine and why it's used?
-  A virtual machine is a computer file, typically called an image, that behaves like an actual computer. It can run in a window as a separate computing environment, often to run a different operating system—or even to function as the user's entire computer experience—as is common on many people's work computers.
 ## Important commands for evaluation
 monitoring.sh - vim /usr/local/bin/monitoring.sh
 
