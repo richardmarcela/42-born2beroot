@@ -24,7 +24,9 @@ sudo deluser novouser user42 - delete user of a group
 lsblk - show the disk partitions 
 
 sudo crontab -e - see the script
+
 sudo crontab -r - remove the current crontab
+
 sudo crontab -l - show the current crontab
 
 sudo vim /etc/pam.d/common-password  - password policy 
