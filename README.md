@@ -3,7 +3,7 @@
 ## Important commands for evaluation
 monitoring.sh - vim /usr/local/bin/monitoring.sh
 
-sudo cat /var/log/sudo/sudo.log
+sudo cat /var/log/sudo/sudo.log - log everytime a sudo command is used 
 
 sudo ufw status - show the allowed ports by firewall, in this case only 4242
 
