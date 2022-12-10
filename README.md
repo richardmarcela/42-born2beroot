@@ -39,6 +39,6 @@ nano /etc/hostname - change the hostname
 
 hostname -I - get ip
 
-ssh -p 4242 mrichard@10.11.250.218 - connect terminal of pc with the vm
+ssh -p 4242 <user>@<machine ip> - connect terminal of pc with the vm
 
 sha1sum Born2beroot.vdi - generate the signature
