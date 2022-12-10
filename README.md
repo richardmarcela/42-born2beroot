@@ -1,44 +1,44 @@
 # 42-born2beroot
 
 ## Important commands for evaluation
-nano /usr/local/bin/monitoring.sh - monitoring.sh 
+nano /usr/local/bin/monitoring.sh - opens monitoring.sh source code  
 
-sudo cat /var/log/sudo/sudo.log - log everytime a sudo command is used 
+sudo cat /var/log/sudo/sudo.log - displays the content of sudo.log, the file that saves logs everytime a sudo command is used  
 
-sudo ufw status - show the allowed ports by firewall, in this case only 4242
+sudo ufw status - displays the current firewall status (rules i.e allowed/denied PORTS)  
 
-sudo ufw allow PORT - allow a new port 
+sudo ufw allow <PORT> - allow a new PORT  
 
-sudo ufw delete allow PORT - delete the rule that allows port
+sudo ufw delete allow <PORT> - delete the firewall rule that allows PORT  
 
-sudo useradd novouser - create a new user
+sudo useradd novouser - create a new user  
 
-sudo addgroup novogroup - create a new group
+sudo addgroup newgroup - create a new group  
 
-sudo adduser novouser user42 - add user to group
+sudo adduser newuser user42 - add newuser to a group  
 
-getent group user42/sudo - get the users in the group
+getent group user42/sudo - displays the users currently in the group  
 
-sudo deluser novouser user42 - delete user of a group 
+sudo deluser newuser user42 - removes newuser from a group  
 
-lsblk - show the disk partitions 
+lsblk - displays the disk partitions  
 
-sudo crontab -e - check if the monitoring script is scheduled
+sudo crontab -e - check if the monitoring script is scheduled on crontab  
 
-sudo crontab -r - remove the current crontab
+sudo crontab -r - remove the current crontab tasks  
 
-sudo crontab -l - show the current crontab
+sudo crontab -l - show the current crontab tasks  
 
-sudo nano /etc/pam.d/common-password  - password policy 
+sudo nano /etc/pam.d/common-password  - password policy   
 
-sudo service ssh status - show the status of ssh 
+sudo service ssh status - show the status of ssh  
 
-sudo visudo - sudo restrictions
+sudo visudo - sudo restrictions  
 
-nano /etc/hostname - change the hostname 
+nano /etc/hostname - change the hostname  
 
-hostname -I - get ip
+hostname -I - get VM's ip  
 
-ssh -p 4242 <user>@<machine ip> - connect terminal of pc with the vm
+ssh -p 4242 <user>@<VM's ip> - connect Host terminal with the VM  
 
-sha1sum Born2beroot.vdi - generate the signature
+sha1sum <machine_name>.vdi - generate the signature
