@@ -1,7 +1,7 @@
 # 42-born2beroot
 
 ## Important commands for evaluation
-monitoring.sh - vim /usr/local/bin/monitoring.sh
+nano /usr/local/bin/monitoring.sh - monitoring.sh 
 
 sudo cat /var/log/sudo/sudo.log - log everytime a sudo command is used 
 
@@ -23,19 +23,19 @@ sudo deluser novouser user42 - delete user of a group
 
 lsblk - show the disk partitions 
 
-sudo crontab -e - see the script
+sudo crontab -e - check if the monitoring script is scheduled
 
 sudo crontab -r - remove the current crontab
 
 sudo crontab -l - show the current crontab
 
-sudo vim /etc/pam.d/common-password  - password policy 
+sudo nano /etc/pam.d/common-password  - password policy 
 
 sudo service ssh status - show the status of ssh 
 
 sudo visudo - sudo restrictions
 
-vim /etc/hostname - change the hostname 
+nano /etc/hostname - change the hostname 
 
 hostname -I - get ip
 
