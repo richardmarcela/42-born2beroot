@@ -9,7 +9,7 @@ sudo ufw status - show the allowed ports by firewall, in this case only 4242
 
 sudo ufw allow PORT - allow a new port 
 
-sudo ufw delete allow PORT - delete port
+sudo ufw delete allow PORT - delete the rule that allows port
 
 sudo useradd novouser - create a new user
 
